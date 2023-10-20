@@ -1,4 +1,4 @@
-package com.tekup.gestdep.models;
+package com.tekup.gestdep.entities;
 
 import java.io.Serializable;
 
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Enseignant implements Serializable{
+public class CadreAdministratif implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,19 +24,17 @@ public class Enseignant implements Serializable{
     private String telephone;
     private String adresse;
     private String sexe;
-    private String grade;
-    private String specialite;
-
-
-    public Enseignant(String nom, String prenom, String email, String telephone, String adresse, String grade,
-            String specialite) {
+    private String poste;
+    
+    public CadreAdministratif(String nom, String prenom, String email, String telephone, String adresse, String sexe,
+            String poste) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.telephone = telephone;
         this.adresse = adresse;
-        this.grade = grade;
-        this.specialite = specialite;
+        this.sexe = sexe;
+        this.poste = poste;
     }
 
     

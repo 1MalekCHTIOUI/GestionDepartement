@@ -1,4 +1,4 @@
-package com.tekup.gestdep.models;
+package com.tekup.gestdep.entities;
 
 import java.io.Serializable;
 

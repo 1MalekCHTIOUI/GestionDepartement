@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tekup.gestdep.dao.EtudiantRepository;
-import com.tekup.gestdep.models.Etudiant;
+import com.tekup.gestdep.entities.Etudiant;
 
 import java.util.List;
 
